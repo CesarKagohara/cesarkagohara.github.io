@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_b945c44fb3c844caa06140332ac515f1 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b945c44fb3c844caa06140332ac515f1" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_b945c44fb3c844caa06140332ac515f1 = L.map(
+                                  'map_b945c44fb3c844caa06140332ac515f1',
+                                  {center: [-10.3333333,-53.2],
+                                  zoom: 4,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_eb1329eb0c7f4e0a9b172fcc98428bfb = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+        
+    
+            var circle_marker_5208c27ea5074e3f907fd8cdd4e15870 = L.circleMarker(
+                [-23.5329,-46.6395],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.51,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_e1299655cc8d46a5bf347b029ced5ae9 = L.popup({maxWidth: '300'});
+
+            
+                var html_2f44e4098d3c4bf1a8692d8ae846f224 = $('<div id="html_2f44e4098d3c4bf1a8692d8ae846f224" style="width: 100.0%; height: 100.0%;">8755, São Paulo</div>')[0];
+                popup_e1299655cc8d46a5bf347b029ced5ae9.setContent(html_2f44e4098d3c4bf1a8692d8ae846f224);
+            
+
+            circle_marker_5208c27ea5074e3f907fd8cdd4e15870.bindPopup(popup_e1299655cc8d46a5bf347b029ced5ae9);
+
+            
+        
+    
+            var circle_marker_5ae9a5921c894c059ce02d8760d918dd = L.circleMarker(
+                [-22.9129,-43.2003],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.71,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_5c787c9bb7fb4243bc7af39de2666326 = L.popup({maxWidth: '300'});
+
+            
+                var html_7849398480d84785bf67cca13513db3f = $('<div id="html_7849398480d84785bf67cca13513db3f" style="width: 100.0%; height: 100.0%;">2855, Rio de Janeiro</div>')[0];
+                popup_5c787c9bb7fb4243bc7af39de2666326.setContent(html_7849398480d84785bf67cca13513db3f);
+            
+
+            circle_marker_5ae9a5921c894c059ce02d8760d918dd.bindPopup(popup_5c787c9bb7fb4243bc7af39de2666326);
+
+            
+        
+    
+            var circle_marker_0bdc2f311b10464688ec26655efe16fd = L.circleMarker(
+                [-3.71664,-38.5423],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.352,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_4f7eaf8487c84bb58589bd04bbf5d3fe = L.popup({maxWidth: '300'});
+
+            
+                var html_60caa9d4eabc40eda1712b452fc49e89 = $('<div id="html_60caa9d4eabc40eda1712b452fc49e89" style="width: 100.0%; height: 100.0%;">1676, Ceará</div>')[0];
+                popup_4f7eaf8487c84bb58589bd04bbf5d3fe.setContent(html_60caa9d4eabc40eda1712b452fc49e89);
+            
+
+            circle_marker_0bdc2f311b10464688ec26655efe16fd.bindPopup(popup_4f7eaf8487c84bb58589bd04bbf5d3fe);
+
+            
+        
+    
+            var circle_marker_f50a55d000ee4720b39a6f119eb039f4 = L.circleMarker(
+                [-3.1186599999999998,-60.0212],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.412,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_a0df5c4274fb42d1af5477ee5d892e2d = L.popup({maxWidth: '300'});
+
+            
+                var html_b6f106b06f30442a866f02b4be637b8d = $('<div id="html_b6f106b06f30442a866f02b4be637b8d" style="width: 100.0%; height: 100.0%;">1206, Amazonas</div>')[0];
+                popup_a0df5c4274fb42d1af5477ee5d892e2d.setContent(html_b6f106b06f30442a866f02b4be637b8d);
+            
+
+            circle_marker_f50a55d000ee4720b39a6f119eb039f4.bindPopup(popup_a0df5c4274fb42d1af5477ee5d892e2d);
+
+            
+        
+    
+            var circle_marker_52579741811b40d0beff48467c998611 = L.circleMarker(
+                [-8.046660000000001,-34.8771],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.92,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_4c75f7656cea4b8387089ae2486b4bd1 = L.popup({maxWidth: '300'});
+
+            
+                var html_6c258b5873fb430eafe24f9d3495e490 = $('<div id="html_6c258b5873fb430eafe24f9d3495e490" style="width: 100.0%; height: 100.0%;">960, Pernambuco</div>')[0];
+                popup_4c75f7656cea4b8387089ae2486b4bd1.setContent(html_6c258b5873fb430eafe24f9d3495e490);
+            
+
+            circle_marker_52579741811b40d0beff48467c998611.bindPopup(popup_4c75f7656cea4b8387089ae2486b4bd1);
+
+            
+        
+    
+            var circle_marker_19d3cc30342c40a4b1103e49d3535fec = L.circleMarker(
+                [-19.9102,-43.9266],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.612,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_9d05b0615a3e4954ba0458a55cef5ca5 = L.popup({maxWidth: '300'});
+
+            
+                var html_78183d49a8c541d59f0347c42bd29896 = $('<div id="html_78183d49a8c541d59f0347c42bd29896" style="width: 100.0%; height: 100.0%;">806, Minas Gerais</div>')[0];
+                popup_9d05b0615a3e4954ba0458a55cef5ca5.setContent(html_78183d49a8c541d59f0347c42bd29896);
+            
+
+            circle_marker_19d3cc30342c40a4b1103e49d3535fec.bindPopup(popup_9d05b0615a3e4954ba0458a55cef5ca5);
+
+            
+        
+    
+            var circle_marker_9e86e67a71ef49b693ef64ea050c4823 = L.circleMarker(
+                [-27.5945,-48.5477],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.536,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_21bf105af59941af9c9d44b2c818158f = L.popup({maxWidth: '300'});
+
+            
+                var html_9b4267e9c932493e8c975ddd6e5bc00b = $('<div id="html_9b4267e9c932493e8c975ddd6e5bc00b" style="width: 100.0%; height: 100.0%;">768, Santa Catarina</div>')[0];
+                popup_21bf105af59941af9c9d44b2c818158f.setContent(html_9b4267e9c932493e8c975ddd6e5bc00b);
+            
+
+            circle_marker_9e86e67a71ef49b693ef64ea050c4823.bindPopup(popup_21bf105af59941af9c9d44b2c818158f);
+
+            
+        
+    
+            var circle_marker_61a66aa94c9048e6a0fa4eb2c404b62d = L.circleMarker(
+                [-25.4195,-49.2646],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.476,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_22fe1ecac7af49349a58a9f2784666ef = L.popup({maxWidth: '300'});
+
+            
+                var html_22e631de282b4076974604ff9867ed43 = $('<div id="html_22e631de282b4076974604ff9867ed43" style="width: 100.0%; height: 100.0%;">738, Paraná</div>')[0];
+                popup_22fe1ecac7af49349a58a9f2784666ef.setContent(html_22e631de282b4076974604ff9867ed43);
+            
+
+            circle_marker_61a66aa94c9048e6a0fa4eb2c404b62d.bindPopup(popup_22fe1ecac7af49349a58a9f2784666ef);
+
+            
+        
+    
+            var circle_marker_e568f53b1be44f1081f20aea0e6209e5 = L.circleMarker(
+                [-12.9718,-38.5011],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.346,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_a436637919364ff1b83e7d024dc0baf2 = L.popup({maxWidth: '300'});
+
+            
+                var html_abec60f4cc3444588ce97f608c2f779d = $('<div id="html_abec60f4cc3444588ce97f608c2f779d" style="width: 100.0%; height: 100.0%;">673, Bahia</div>')[0];
+                popup_a436637919364ff1b83e7d024dc0baf2.setContent(html_abec60f4cc3444588ce97f608c2f779d);
+            
+
+            circle_marker_e568f53b1be44f1081f20aea0e6209e5.bindPopup(popup_a436637919364ff1b83e7d024dc0baf2);
+
+            
+        
+    
+            var circle_marker_cb30bc5a99674072a12323b562da9181 = L.circleMarker(
+                [-30.0318,-51.2065],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.306,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_d78cd3e3708848378ecde5add2470f02 = L.popup({maxWidth: '300'});
+
+            
+                var html_6e8d279665cb43b0b74db83013d8e235 = $('<div id="html_6e8d279665cb43b0b74db83013d8e235" style="width: 100.0%; height: 100.0%;">653, Rio Grande do Sul</div>')[0];
+                popup_d78cd3e3708848378ecde5add2470f02.setContent(html_6e8d279665cb43b0b74db83013d8e235);
+            
+
+            circle_marker_cb30bc5a99674072a12323b562da9181.bindPopup(popup_d78cd3e3708848378ecde5add2470f02);
+
+            
+        
+    
+            var circle_marker_459079dadce2470ab04ff419e29fc18e = L.circleMarker(
+                [-15.7795,-47.9297],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.228,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_0a8b955f80bb471a91122d77a751a22a = L.popup({maxWidth: '300'});
+
+            
+                var html_bd152f8ece4f436f8e2815d4cbe56cf0 = $('<div id="html_bd152f8ece4f436f8e2815d4cbe56cf0" style="width: 100.0%; height: 100.0%;">614, Distrito Federal</div>')[0];
+                popup_0a8b955f80bb471a91122d77a751a22a.setContent(html_bd152f8ece4f436f8e2815d4cbe56cf0);
+            
+
+            circle_marker_459079dadce2470ab04ff419e29fc18e.bindPopup(popup_0a8b955f80bb471a91122d77a751a22a);
+
+            
+        
+    
+            var circle_marker_d59a64fdb1944c1489a03aa8d6e784fe = L.circleMarker(
+                [-2.53874,-44.2825],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.796,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_7ed37b20012f4c4599db0115bb2be2b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_0d7867b2707449cc8be705f5a8fa5a33 = $('<div id="html_0d7867b2707449cc8be705f5a8fa5a33" style="width: 100.0%; height: 100.0%;">398, Maranhão</div>')[0];
+                popup_7ed37b20012f4c4599db0115bb2be2b0.setContent(html_0d7867b2707449cc8be705f5a8fa5a33);
+            
+
+            circle_marker_d59a64fdb1944c1489a03aa8d6e784fe.bindPopup(popup_7ed37b20012f4c4599db0115bb2be2b0);
+
+            
+        
+    
+            var circle_marker_4758d999f2104a5389f02128f7e50057 = L.circleMarker(
+                [-20.3155,-40.3128],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.766,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_dee3399683374a37a0baea7d9330376b = L.popup({maxWidth: '300'});
+
+            
+                var html_fc192a4d9097412aadef9fb85e17a831 = $('<div id="html_fc192a4d9097412aadef9fb85e17a831" style="width: 100.0%; height: 100.0%;">383, Espírito Santo</div>')[0];
+                popup_dee3399683374a37a0baea7d9330376b.setContent(html_fc192a4d9097412aadef9fb85e17a831);
+            
+
+            circle_marker_4758d999f2104a5389f02128f7e50057.bindPopup(popup_dee3399683374a37a0baea7d9330376b);
+
+            
+        
+    
+            var circle_marker_9ad8cb64c05042b48321be37d16f0888 = L.circleMarker(
+                [-5.79357,-35.1986],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.604,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_e3c0b60de6dd484b8ac127093837dd31 = L.popup({maxWidth: '300'});
+
+            
+                var html_d1904246496940c9b7165ee00cd247c9 = $('<div id="html_d1904246496940c9b7165ee00cd247c9" style="width: 100.0%; height: 100.0%;">302, Rio Grande do Norte</div>')[0];
+                popup_e3c0b60de6dd484b8ac127093837dd31.setContent(html_d1904246496940c9b7165ee00cd247c9);
+            
+
+            circle_marker_9ad8cb64c05042b48321be37d16f0888.bindPopup(popup_e3c0b60de6dd484b8ac127093837dd31);
+
+            
+        
+    
+            var circle_marker_6df45794426045ba840ff5247143d79e = L.circleMarker(
+                [-1.4554,-48.4898],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.492,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_c9f352ed621648edaa068ab2305f45eb = L.popup({maxWidth: '300'});
+
+            
+                var html_81702e0cc5204aeaa48345dccd6a5d73 = $('<div id="html_81702e0cc5204aeaa48345dccd6a5d73" style="width: 100.0%; height: 100.0%;">246, Pará</div>')[0];
+                popup_c9f352ed621648edaa068ab2305f45eb.setContent(html_81702e0cc5204aeaa48345dccd6a5d73);
+            
+
+            circle_marker_6df45794426045ba840ff5247143d79e.bindPopup(popup_c9f352ed621648edaa068ab2305f45eb);
+
+            
+        
+    
+            var circle_marker_56d50b62a59248289f8a3344e7517adc = L.circleMarker(
+                [0.034934,-51.0694],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.46,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_5b8b5300e3fe4e08b66c2f9e51eb6ed3 = L.popup({maxWidth: '300'});
+
+            
+                var html_0fdb27b4c26f44598aa96951edfbbc9b = $('<div id="html_0fdb27b4c26f44598aa96951edfbbc9b" style="width: 100.0%; height: 100.0%;">230, Amapá</div>')[0];
+                popup_5b8b5300e3fe4e08b66c2f9e51eb6ed3.setContent(html_0fdb27b4c26f44598aa96951edfbbc9b);
+            
+
+            circle_marker_56d50b62a59248289f8a3344e7517adc.bindPopup(popup_5b8b5300e3fe4e08b66c2f9e51eb6ed3);
+
+            
+        
+    
+            var circle_marker_95d6b6d542b840ee97454988a2cc6e06 = L.circleMarker(
+                [-16.6864,-49.2643],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.458,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_46bc9ec92ed748b38f7c6b8cc52e0269 = L.popup({maxWidth: '300'});
+
+            
+                var html_75db6f624e6246dfaa6bede923d66771 = $('<div id="html_75db6f624e6246dfaa6bede923d66771" style="width: 100.0%; height: 100.0%;">229, Goiás</div>')[0];
+                popup_46bc9ec92ed748b38f7c6b8cc52e0269.setContent(html_75db6f624e6246dfaa6bede923d66771);
+            
+
+            circle_marker_95d6b6d542b840ee97454988a2cc6e06.bindPopup(popup_46bc9ec92ed748b38f7c6b8cc52e0269);
+
+            
+        
+    
+            var circle_marker_9675f6f110af4c4dbf76f346da173553 = L.circleMarker(
+                [-15.600999999999999,-56.0974],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.246,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_2fca15cf719c4cfe98b02372fbb92ced = L.popup({maxWidth: '300'});
+
+            
+                var html_4fec074e1848459aae71f5a89a2e77e7 = $('<div id="html_4fec074e1848459aae71f5a89a2e77e7" style="width: 100.0%; height: 100.0%;">123, Mato Grosso</div>')[0];
+                popup_2fca15cf719c4cfe98b02372fbb92ced.setContent(html_4fec074e1848459aae71f5a89a2e77e7);
+            
+
+            circle_marker_9675f6f110af4c4dbf76f346da173553.bindPopup(popup_2fca15cf719c4cfe98b02372fbb92ced);
+
+            
+        
+    
+            var circle_marker_c8236796c8784fc39df51264d22e278b = L.circleMarker(
+                [-20.4486,-54.6295],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.202,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_bdf9b513bd4a4a46b2e5ab6dd8671279 = L.popup({maxWidth: '300'});
+
+            
+                var html_a6dc6760625a42a092905dd57c011e38 = $('<div id="html_a6dc6760625a42a092905dd57c011e38" style="width: 100.0%; height: 100.0%;">101, Mato Grosso do Sul</div>')[0];
+                popup_bdf9b513bd4a4a46b2e5ab6dd8671279.setContent(html_a6dc6760625a42a092905dd57c011e38);
+            
+
+            circle_marker_c8236796c8784fc39df51264d22e278b.bindPopup(popup_bdf9b513bd4a4a46b2e5ab6dd8671279);
+
+            
+        
+    
+            var circle_marker_1e8cf06fe023447ca810584a7ec8820e = L.circleMarker(
+                [-7.1150899999999995,-34.8641],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.202,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_9355954265e84fb9ad58fb260b77e24a = L.popup({maxWidth: '300'});
+
+            
+                var html_69f5840d6c53496fa15466d4d84c01bc = $('<div id="html_69f5840d6c53496fa15466d4d84c01bc" style="width: 100.0%; height: 100.0%;">101, Paraíba</div>')[0];
+                popup_9355954265e84fb9ad58fb260b77e24a.setContent(html_69f5840d6c53496fa15466d4d84c01bc);
+            
+
+            circle_marker_1e8cf06fe023447ca810584a7ec8820e.bindPopup(popup_9355954265e84fb9ad58fb260b77e24a);
+
+            
+        
+    
+            var circle_marker_a636d72f0ee04954ac00d686fd630312 = L.circleMarker(
+                [2.82384,-60.6753],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.158,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_28631e8621364a1c830727d63c35bc36 = L.popup({maxWidth: '300'});
+
+            
+                var html_221bcbfe782c4213a7903f647cc1bb90 = $('<div id="html_221bcbfe782c4213a7903f647cc1bb90" style="width: 100.0%; height: 100.0%;">79, Roraima</div>')[0];
+                popup_28631e8621364a1c830727d63c35bc36.setContent(html_221bcbfe782c4213a7903f647cc1bb90);
+            
+
+            circle_marker_a636d72f0ee04954ac00d686fd630312.bindPopup(popup_28631e8621364a1c830727d63c35bc36);
+
+            
+        
+    
+            var circle_marker_160a68da445c43ed9c1df58ee690d8d5 = L.circleMarker(
+                [-9.97499,-67.8243],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.154,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_a7f8c0c4089a4238a5d58bb3c689746a = L.popup({maxWidth: '300'});
+
+            
+                var html_ecf48e67b96343b68745254269fae53f = $('<div id="html_ecf48e67b96343b68745254269fae53f" style="width: 100.0%; height: 100.0%;">77, Acre</div>')[0];
+                popup_a7f8c0c4089a4238a5d58bb3c689746a.setContent(html_ecf48e67b96343b68745254269fae53f);
+            
+
+            circle_marker_160a68da445c43ed9c1df58ee690d8d5.bindPopup(popup_a7f8c0c4089a4238a5d58bb3c689746a);
+
+            
+        
+    
+            var circle_marker_c5e474ab5bdd4d6592a66f53f5bb2e29 = L.circleMarker(
+                [-9.665989999999999,-35.735],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.096,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_d80f939e15824c46a7784e8a040c46b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_08e9437a6e8d4360b9273688550e927a = $('<div id="html_08e9437a6e8d4360b9273688550e927a" style="width: 100.0%; height: 100.0%;">48, Alagoas</div>')[0];
+                popup_d80f939e15824c46a7784e8a040c46b0.setContent(html_08e9437a6e8d4360b9273688550e927a);
+            
+
+            circle_marker_c5e474ab5bdd4d6592a66f53f5bb2e29.bindPopup(popup_d80f939e15824c46a7784e8a040c46b0);
+
+            
+        
+    
+            var circle_marker_1ca1e66a9e6f4fb9acedf2f48b5dadf8 = L.circleMarker(
+                [-5.09194,-42.8034],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.088,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_588ba3328cc748509c899949808ec44a = L.popup({maxWidth: '300'});
+
+            
+                var html_1e4fe3d0885041128fc294a35db55d79 = $('<div id="html_1e4fe3d0885041128fc294a35db55d79" style="width: 100.0%; height: 100.0%;">44, Piauí</div>')[0];
+                popup_588ba3328cc748509c899949808ec44a.setContent(html_1e4fe3d0885041128fc294a35db55d79);
+            
+
+            circle_marker_1ca1e66a9e6f4fb9acedf2f48b5dadf8.bindPopup(popup_588ba3328cc748509c899949808ec44a);
+
+            
+        
+    
+            var circle_marker_01498de9212a40ccb628e26771866c86 = L.circleMarker(
+                [-10.9091,-37.0677],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.088,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_ebfb756d988e4cd99259dee4df6287ec = L.popup({maxWidth: '300'});
+
+            
+                var html_479be560127f49cfb1d872d586eea917 = $('<div id="html_479be560127f49cfb1d872d586eea917" style="width: 100.0%; height: 100.0%;">44, Sergipe</div>')[0];
+                popup_ebfb756d988e4cd99259dee4df6287ec.setContent(html_479be560127f49cfb1d872d586eea917);
+            
+
+            circle_marker_01498de9212a40ccb628e26771866c86.bindPopup(popup_ebfb756d988e4cd99259dee4df6287ec);
+
+            
+        
+    
+            var circle_marker_da93fffda756450c80e31b251f69f15c = L.circleMarker(
+                [-8.760769999999999,-63.8999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.07,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_16e54127cdb641aab67a2bf1d907abf0 = L.popup({maxWidth: '300'});
+
+            
+                var html_15292bac5cbe44be8fb55613da514c7d = $('<div id="html_15292bac5cbe44be8fb55613da514c7d" style="width: 100.0%; height: 100.0%;">35, Rondônia</div>')[0];
+                popup_16e54127cdb641aab67a2bf1d907abf0.setContent(html_15292bac5cbe44be8fb55613da514c7d);
+            
+
+            circle_marker_da93fffda756450c80e31b251f69f15c.bindPopup(popup_16e54127cdb641aab67a2bf1d907abf0);
+
+            
+        
+    
+            var circle_marker_a3d5485082b9416686a07bb2b804ea07 = L.circleMarker(
+                [-10.24,-48.3558],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.05,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_b945c44fb3c844caa06140332ac515f1);
+            
+    
+            var popup_8af009f0615f488487e3737a217c14e1 = L.popup({maxWidth: '300'});
+
+            
+                var html_218bec9da48341a3bc2e9d4fde8d145c = $('<div id="html_218bec9da48341a3bc2e9d4fde8d145c" style="width: 100.0%; height: 100.0%;">25, Tocantins</div>')[0];
+                popup_8af009f0615f488487e3737a217c14e1.setContent(html_218bec9da48341a3bc2e9d4fde8d145c);
+            
+
+            circle_marker_a3d5485082b9416686a07bb2b804ea07.bindPopup(popup_8af009f0615f488487e3737a217c14e1);
+
+            
+        
+</script>
